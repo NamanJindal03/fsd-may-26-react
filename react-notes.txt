@@ -1,0 +1,25 @@
+
+typescript -> code 
+    npx tsc -> daalni
+    code run -> 
+
+Hot Module Reloading -> 
+
+
+JSX vs html -> 
+1. We cannot use class keyword we have to use className
+2. JSX we need to utilise camelCasing
+
+3. Wherever you see a paranthesis we are writing JS
+
+
+JSX different from JS
+
+A js function which returns us a JSX is called as a component
+
+file module->
+
+
+
+in 1st ppt pending -> Virtual DOM concept
+

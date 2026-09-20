@@ -1,0 +1,24 @@
+1. Links in Linux - hard links and soft links
+2. Get vs Post -> In forms and in general
+3. Iframe 
+4. Indepth about metatags
+5. Forms few more attributes (study during JS forms)
+7. not or or in media queries
+9. readme.md
+10. Deep discussion about == and ===
+11. complex forms of arrow functions
+12. More questions on this keyword
+13. reduceRight
+14. Promise.all()
+15. Put vs Patch
+16. SSR vs CSR more in depth
+17. SPA
+18. Component Architecture
+19. eslint
+
+
+Homework -> 
+1. Sticky vs fixed 
+2. how to integrate font awesome icons
+3. Netflix homepage clone
+
