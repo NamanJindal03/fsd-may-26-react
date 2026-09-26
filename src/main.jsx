@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import klo, { GiveUiElements, GiveDirections } from "./Paragraph";
+import klo, {  GiveUiElements, GiveDirections } from "./Paragraph";
 
 //the name can be anything 
 // import  from './Paragraph'
@@ -15,15 +15,26 @@ function returnSomeRandomOperation(num1, num2, operator){
   return `${num1} ${operator} ${num2}`
 }
 
-const namesArr = ['Samrat', 'Sanjeev', 'Naman', 'Akshay'];
+const namesArr = ['Samrat', 'Sanjeev', 'Naman', 'Akshay', 'Platue'];
 const obj = {
   employee: 'naman',
   employeeId: 10,
 }
 
+
+function randomNameDisplayer(namesArr){
+  const maxValue = namesArr.length - 1;
+  const randomIndex = Math.floor(Math.random()* (maxValue + 1))
+  return namesArr[randomIndex]
+}
+const randomValue = randomNameDisplayer(namesArr)
+
 klo()
 
+
+
 //component
+//typing object
 
 
 createRoot(document.getElementById("root")).render(
@@ -35,9 +46,9 @@ createRoot(document.getElementById("root")).render(
         className="w-full h-32 rounded-xl mb-4 transition-colors duration-300 bg-indigo-500"
       ></div>
       {/* {giveUIElements(10)} */}
-      <GiveUiElements number={10} name={'Sanjeev'}  age={10} namesArr={namesArr} obj={obj}/>
-      <GiveUiElements number={20} name={'Sanjeev'}  age={10} namesArr={namesArr} obj={obj}/>
-      <GiveUiElements number={30} name={'Sanjeev'}  age={10} namesArr={namesArr} obj={obj}/>
+      <GiveUiElements number={10} name={'Sanjeev'}  age={10} randomName={randomValue} obj={obj} namesArr={namesArr}/>
+      <GiveUiElements number={20} name={'Sanjeev'}  age={10} randomName={randomValue} obj={obj} namesArr={namesArr}/>
+      <GiveUiElements number={30} name={'Sanjeev'}  age={10} randomName={randomValue} obj={obj} namesArr={namesArr} isBadge={'trending'}/>
       {/* {giveUIElements(20)}
       {giveUIElements(30)} */}
       <button

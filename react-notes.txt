@@ -21,7 +21,7 @@ file module->
 
 
 
-in 1st ppt pending -> Virtual DOM concept
+in 1st ppt pending -> Virtual DOM concept -> Keys in 2nd PPT 
 
 
 2 ways to export in es6 file system
@@ -45,3 +45,6 @@ Props -> datatypes????
     5. Objects 
     6. Functions 
     7. Components 
+
+
+*********ASSIGNEMENT REACT - AIRBNB Feed clone 
