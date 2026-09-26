@@ -23,3 +23,25 @@ file module->
 
 in 1st ppt pending -> Virtual DOM concept
 
+
+2 ways to export in es6 file system
+1. Default export 
+    a. in one file only and only 1 default export can be there. 
+    b. the imported name can change and has to be imported without {}
+
+2. Named export 
+    a. in one file we can have multiple named exports 
+    b. over here the name has to be exactly same and it is imported with {}
+
+can named and default exist together???? 
+    YES 
+
+
+Props -> datatypes????
+    1. Number 
+    2. Boolean
+    3. String
+    4. Arrays 
+    5. Objects 
+    6. Functions 
+    7. Components 

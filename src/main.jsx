@@ -1,5 +1,9 @@
 import { createRoot } from "react-dom/client";
-import { GiveUiElements } from "./Paragraph";
+import klo, { GiveUiElements, GiveDirections } from "./Paragraph";
+
+//the name can be anything 
+// import  from './Paragraph'
+
 // import App from './App.jsx'
 
 function printOnConsole(){
@@ -10,6 +14,14 @@ function printOnConsole(){
 function returnSomeRandomOperation(num1, num2, operator){
   return `${num1} ${operator} ${num2}`
 }
+
+const namesArr = ['Samrat', 'Sanjeev', 'Naman', 'Akshay'];
+const obj = {
+  employee: 'naman',
+  employeeId: 10,
+}
+
+klo()
 
 //component
 
@@ -23,9 +35,9 @@ createRoot(document.getElementById("root")).render(
         className="w-full h-32 rounded-xl mb-4 transition-colors duration-300 bg-indigo-500"
       ></div>
       {/* {giveUIElements(10)} */}
-      <GiveUiElements number={10} name={'nj'}  age={10}/>
-      <GiveUiElements number={20}/>
-      <GiveUiElements number={30}/>
+      <GiveUiElements number={10} name={'Sanjeev'}  age={10} namesArr={namesArr} obj={obj}/>
+      <GiveUiElements number={20} name={'Sanjeev'}  age={10} namesArr={namesArr} obj={obj}/>
+      <GiveUiElements number={30} name={'Sanjeev'}  age={10} namesArr={namesArr} obj={obj}/>
       {/* {giveUIElements(20)}
       {giveUIElements(30)} */}
       <button
