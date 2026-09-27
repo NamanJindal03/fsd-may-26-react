@@ -48,3 +48,18 @@ Props -> datatypes????
 
 
 *********ASSIGNEMENT REACT - AIRBNB Feed clone 
+
+
+State and variable difference????
+
+React refreshes or rerenders the page only and only when it is aware that it has to make the change. 
+React -> I made a change please compare and update -> 
+
+
+A state is given by react, so whenever you update it. React is aware of it and it calls its rerendering mechanism to 
+display the name page if required
+
+whereas a normal vairable is incapable of doing it
+
+Something which is visible over the viewport and can change in its lifetime, should be defined via a state
+rather than a variable.
