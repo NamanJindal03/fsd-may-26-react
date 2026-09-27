@@ -30,8 +30,8 @@ export default function Counter(){
 
 
     //two way binding 
-    const [institute, setInstitute] = useState('naman')
-    const [name, setName] = useState('')
+    const [institute, setInstitute] = useState({value: '', error: ''})
+    const [name, setName] = useState({value: '', error: ''})
 
     function handleKeyDown(e){
         console.log(e.target.name)
@@ -42,10 +42,22 @@ export default function Counter(){
         // console.log(e.target.value)
         // setInstitute(e.target.value)
         if(e.target.name === 'institute'){
-            setInstitute(e.target.value)
+            // institute.value = e.target.value
+            // console.log(institute)
+            setInstitute({...institute, value: e.target.value})
         }
         else if(e.target.name === 'name'){
-            setName(e.target.value)
+            // name.value = e.target.value
+            // console.log(name)
+            setName({...name, value: e.target.value})
+        }
+    }
+
+    function handleSubmit(e){
+        e.preventDefault();
+        if(institute.value.length < 10){
+            setInstitute({...institute, error: 'Name should be greater than 10'})
+            return;
         }
     }
 
@@ -90,8 +102,13 @@ export default function Counter(){
             {/* <input value={inputValue} onChange={(e)=> setInputValue(e.target.value)}/>
             <input value={name} onChange={(e)=> setName(e.target.value)}/> */}
 
-            <input value={institute} onChange={(e)=> handleFormEvents(e)} name='institute'/>
-            <input value={name} onChange={(e)=> handleFormEvents(e)} name="name"/>
+                <form action="" onSubmit={handleSubmit}>
+                    <input value={institute.value} onChange={(e)=> handleFormEvents(e)} name='institute'/>
+                    <div>{institute.error && <span style={{color: 'red'}}> {institute.error} </span>}</div>
+                    <input value={name.value} onChange={(e)=> handleFormEvents(e)} name="name"/>
+                    <button >Submit</button>
+                </form>
+           
         </>
     )
 }
