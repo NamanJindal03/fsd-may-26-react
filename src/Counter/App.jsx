@@ -26,6 +26,11 @@ export default function Counter(){
     const [counter2, setCounter2] = useState(100)
     const [counter3, setCounter3] = useState(0)
     const [counter4, setCounter4] = useState(0)
+    const [counter5, setCounter5] = useState(0)
+    const [randomArr, setRandomArr] = useState([{name: 'Akshay', age: 24, dbId: 907856},
+    {name: 'naman', age: 11, dbId: 123213123},
+    {name: 'naman', age: 91, dbId: 98786754},
+    {name: 'vishal', age: 21, dbId: 3432156},])
     let localCounter = 100
 
 
@@ -63,6 +68,37 @@ export default function Counter(){
 
     return (
         <>
+            {console.log('Rerendered')}
+            <h1>Counter Value: {counter5}</h1>
+            <button onClick={()=> {
+                // setCounter5(counter5 + 1)
+                // setCounter5 ((prevValue)=>{
+                //     return prevValue 
+                // })
+                // setCounter5 ((prevValue)=>{
+                //     return prevValue 
+                // })
+                // setCounter5 ((prevValue)=>{
+                //     return prevValue 
+                // })
+
+                // setRandomArr(randomArr.push(6)) //wrong
+                setRandomArr([...randomArr, 6]) //the correct way in which it will lead to 
+                //rerender
+
+
+            }}>Increment</button>
+            <button onClick={() => setCounter(counter5 - 1)}>Decrement</button>
+
+
+            <hr />
+
+            {randomArr.map((val, index)=>{
+                return (
+                    <div key={index}>{JSON.stringify(val)}</div>
+                )
+            })}
+
             <TempChild />
             <h1>Counter Value: {counter}</h1>
             <button onClick={()=> {

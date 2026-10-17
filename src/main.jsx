@@ -5,7 +5,9 @@ import klo, {  GiveUiElements, GiveDirections } from "./Paragraph";
 // import  from './Paragraph'
 
 // import App from './App.jsx'
-import App from './Counter/App'
+// import App from './Counter/App'
+// import App from './Effects/App'
+import App from './WeatherProject/App'
 
 
 function printOnConsole(){
