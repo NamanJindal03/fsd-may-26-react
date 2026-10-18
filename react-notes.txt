@@ -87,3 +87,20 @@ Date.now() ->
 lifecycle -> 
 
 water lifecycle 
+
+context API 
+1. Creating a store 
+    React.createContext(); //you have created a store
+2. Creating a provider 
+3. Creating a consumer 
+        useContext(store-reference) 
+
+In one application, we can ideally have multiple context api stores 
+One store for theme, one store for authneticatin, another store for xyz 
+
+//is another way of defining state -> an alternate to useState -> ideally useState is driven from useReducer
+useReducer
+
+//optimisation related hooks
+useCallback
+useMemo
