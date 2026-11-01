@@ -104,3 +104,8 @@ useReducer
 //optimisation related hooks
 useCallback
 useMemo
+
+BFF -? is a very light backend layer -> 
+    which generally only deals with constructing meaningful payload corresponding to backend api -> 
+
+    

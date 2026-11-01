@@ -9,7 +9,13 @@ import klo, {  GiveUiElements, GiveDirections } from "./Paragraph";
 // import App from './Effects/App'
 // import App from './Todo-application/App'
 // import App from './Wrapper/App'
-import App from "./ContextApi/App"
+// import App from "./ContextApi/App"
+// import App from './understanding-patterns/App'
+// import App from './CustomHooks/app'
+// import App from './UseRef/App'
+// import App from './ErrorBoundary/App'
+
+import App from './tempCode/app'
 
 
 
