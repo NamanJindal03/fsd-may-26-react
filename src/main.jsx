@@ -14,8 +14,10 @@ import klo, {  GiveUiElements, GiveDirections } from "./Paragraph";
 // import App from './CustomHooks/app'
 // import App from './UseRef/App'
 // import App from './ErrorBoundary/App'
-
-import App from './tempCode/app'
+// import App from './hoc/App'
+// import App from './renderProps/App'
+// import App from './ErrorBoundary/App'
+import App from './Redux/App'
 
 
 

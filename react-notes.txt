@@ -108,4 +108,24 @@ useMemo
 BFF -? is a very light backend layer -> 
     which generally only deals with constructing meaningful payload corresponding to backend api -> 
 
-    
+Common functionality -> 
+    component -> Authenticated Users -> 
+    component -> server log -> user -> access -> 
+
+    control -> which components should have that -> 
+        100 -> 25 -> 
+        reuse -> 
+
+    baseComponent -> 
+        pass krdiya common component -> will add its masala over it and return the original + masala
+
+
+higher order function??
+    function as a input, ya output return -> 
+
+
+Prompt -> 
+    Help me decide a clear winner based on the future possibilities and the current scenario, make
+    sure the apttern that we choose makes our coding clean and is also extendable easily. 
+
+    Debate with GPT 6.1 and come up with a conclusion
